@@ -61,12 +61,20 @@
 <script src="<?php echo base_url('dist')?>/js/jquery.backstretch.min.js"></script>
 <script>
     $(function(){
-        $(".satu").typed({
-            strings: ["$: Halo,<br>^1000 $: Nama Saya Januar Fonti<br>^2000 $: Saya adalah seorang pesepeda<br>^2000 $: Selain itu saya juga seorang web developer<br>^2000 $: Ingin lebih mengenal dengan saya ?<br>^2000 $: Klik <a href='http://januarfonti.com' target='_blank'>tautan ini</a> untuk info lebih lanjut.<br>^2000 $: Bye ~ ^1000"],
-            contentType: 'html',
-            typeSpeed: 30,
-            showCursor: true,
-            loop:true,
+
+        var isi;
+        $.ajax({
+            url: '<?php echo base_url('api/profile'); ?>',
+            success: function(data) {
+                isi = data['isi'];
+                $(".satu").typed({
+                    strings: [isi],
+                    contentType: 'html',
+                    typeSpeed: 30,
+                    showCursor: true,
+                    loop:true,
+                });
+            }
         });
 
         $.backstretch("<?php echo base_url('dist'); ?>/img/bg.jpg");
