@@ -65,6 +65,13 @@ p {
     font-size: 12px;
     min-height: 500px;
 }
+
+.jrf {
+    background: rgba(255, 255, 255, 0.1)!important;
+    color: #f4f4f4;
+    border:none;
+}
+
 .left{
     color:red;
 }
@@ -75,4 +82,23 @@ p {
 
 .right{
     color: green;
+}
+
+.btn-jrf {
+  color: #000;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-jrf:focus,
+.btn-jrf.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.btn-jrf:hover {
+  color: #000;
+  background-color: #f8f8f8;
+  border: none;
 }

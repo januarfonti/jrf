@@ -1,0 +1,21 @@
+{
+  "name": "januarfonti-bekup",
+  "homepage": "https://github.com/kmzwa88saa/jrf",
+  "authors": [
+    "Januar Fonti <me@januarfonti.com>"
+  ],
+  "description": "tugas pribadi bekup",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+],
+"dependencies": {
+  "bootstrap": "^3.3.7",
+  "sweetalert2": "^5.3.8"
+}
+}
