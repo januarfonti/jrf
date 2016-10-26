@@ -1,0 +1,78 @@
+body {
+    padding-top: 70px;
+    background-color: #f2f2f2;
+    font-size: 15px !important;
+}
+
+p {
+    margin-bottom:-3px;
+}
+
+.typed {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+
+}
+.typed-cursor{
+    font-size: 12px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    color:#fff !important;
+
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+.result {
+    padding-top:30px;
+}
+
+
+.panel-transparent {
+    background: none;
+}
+
+.panel-default {
+    border: none;
+    font-family: 'Cousine', monospace;
+    color: #fff;
+}
+
+.panel-transparent .panel-heading {
+    font-size: 12px;
+    line-height: 10px;
+}
+.panel-transparent .panel-body{
+    background: rgba(0, 0, 0, 0.8)!important;
+    color: dimgray;
+    font-size: 12px;
+    min-height: 500px;
+}
+.left{
+    color:red;
+}
+
+.middle{
+    color: darkgrey;
+}
+
+.right{
+    color: green;
+}
