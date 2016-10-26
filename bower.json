@@ -16,6 +16,8 @@
 ],
 "dependencies": {
   "bootstrap": "^3.3.7",
-  "sweetalert2": "^5.3.8"
+  "sweetalert2": "^5.3.8",
+  "typed.js": "^1.1.4",
+  "jquery-backstretch": "^2.0.4"
 }
 }

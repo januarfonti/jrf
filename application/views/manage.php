@@ -7,12 +7,12 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Januar Fonti</title>
     <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
-
     <!-- Bootstrap -->
-    <link href="<?php echo base_url('dist')?>/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url('bower_components/bootstrap/dist/css/bootstrap.css'); ?>" rel="stylesheet">
 
     <link href="<?php echo base_url('dist')?>/css/style.css" rel="stylesheet">
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('bower_components/sweetalert2/dist/sweetalert2.min.css'); ?>">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,7 +38,8 @@
                 <div class="col-md-4 text-center">
                     <i class="ion-home"></i> kmzwa88saa - bash
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-right">
+                    <a href="<?php echo base_url(); ?>"><i class="ion-chevron-left"></i> Back</a>
                 </div>
             </div>
 
@@ -56,11 +57,14 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="<?php echo base_url('bower_components/jquery/jquery.js'); ?>"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="<?php echo base_url('dist')?>/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url('dist')?>/js/typed.js"></script>
-<script src="<?php echo base_url('dist')?>/js/jquery.backstretch.min.js"></script>
+<script src="<?php echo base_url('bower_components/bootstrap/dist/js/bootstrap.js'); ?>"></script>
+<script src="<?php echo base_url('bower_components/typed.js/js/typed.js'); ?>"></script>
+<script src="<?php echo base_url('bower_components/jquery-backstretch/jquery.backstretch.min.js'); ?>"></script>
+<script src="<?php echo base_url('bower_components/es6-promise/es6-promise.auto.min.js'); ?>"></script>
+<script src="<?php echo base_url('bower_components/sweetalert2/dist/sweetalert2.min.js'); ?>"></script>
+
 <script>
     $(function(){
         getdata();
@@ -85,6 +89,7 @@
               cache: false,
               success:function(){
                 getdata();
+                swal('Data berhasil di update !');
               },
            });
         });
